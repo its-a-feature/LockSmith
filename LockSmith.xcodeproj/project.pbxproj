@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4670A38282EC49E0034FDB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4670A37282EC49E0034FDB5 /* main.m */; };
+		C4670A40282EC50D0034FDB5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4670A3F282EC50D0034FDB5 /* Security.framework */; platformFilter = maccatalyst; };
+		C47916FF28D919750067393F /* utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C47916FE28D919750067393F /* utilities.m */; };
+		C479171628DD01D80067393F /* utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C47916FE28D919750067393F /* utilities.m */; };
+		C479171728DD01D80067393F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4670A37282EC49E0034FDB5 /* main.m */; };
+		C479171928DD01D80067393F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4670A3F282EC50D0034FDB5 /* Security.framework */; platformFilter = maccatalyst; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C479172028DD075E0067393F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4670A2C282EC49D0034FDB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C479171428DD01D80067393F;
+			remoteInfo = LockSmithDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4670A32282EC49E0034FDB5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C479171A28DD01D80067393F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C4670A34282EC49E0034FDB5 /* LockSmith */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LockSmith; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4670A37282EC49E0034FDB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4670A3F282EC50D0034FDB5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C4670A412831FD160034FDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4670A42283C918A0034FDB5 /* codesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codesign.h; sourceTree = "<group>"; };
+		C47916FE28D919750067393F /* utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = utilities.m; sourceTree = "<group>"; };
+		C479170028D9199D0067393F /* utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
+		C479171E28DD01D80067393F /* LockSmithDylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LockSmithDylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4670A31282EC49E0034FDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4670A40282EC50D0034FDB5 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C479171828DD01D80067393F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C479171928DD01D80067393F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4670A2B282EC49D0034FDB5 = {
+			isa = PBXGroup;
+			children = (
+				C4670A36282EC49E0034FDB5 /* LockSmith */,
+				C4670A35282EC49E0034FDB5 /* Products */,
+				C4670A3E282EC50D0034FDB5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4670A35282EC49E0034FDB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4670A34282EC49E0034FDB5 /* LockSmith */,
+				C479171E28DD01D80067393F /* LockSmithDylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4670A36282EC49E0034FDB5 /* LockSmith */ = {
+			isa = PBXGroup;
+			children = (
+				C4670A37282EC49E0034FDB5 /* main.m */,
+				C4670A412831FD160034FDB5 /* Info.plist */,
+				C4670A42283C918A0034FDB5 /* codesign.h */,
+				C47916FE28D919750067393F /* utilities.m */,
+				C479170028D9199D0067393F /* utilities.h */,
+			);
+			path = LockSmith;
+			sourceTree = "<group>";
+		};
+		C4670A3E282EC50D0034FDB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4670A3F282EC50D0034FDB5 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4670A33282EC49E0034FDB5 /* LockSmith */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4670A3B282EC49E0034FDB5 /* Build configuration list for PBXNativeTarget "LockSmith" */;
+			buildPhases = (
+				C4670A30282EC49E0034FDB5 /* Sources */,
+				C4670A31282EC49E0034FDB5 /* Frameworks */,
+				C4670A32282EC49E0034FDB5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C479172128DD075E0067393F /* PBXTargetDependency */,
+			);
+			name = LockSmith;
+			productName = LockSmith;
+			productReference = C4670A34282EC49E0034FDB5 /* LockSmith */;
+			productType = "com.apple.product-type.tool";
+		};
+		C479171428DD01D80067393F /* LockSmithDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C479171B28DD01D80067393F /* Build configuration list for PBXNativeTarget "LockSmithDylib" */;
+			buildPhases = (
+				C479171528DD01D80067393F /* Sources */,
+				C479171828DD01D80067393F /* Frameworks */,
+				C479171A28DD01D80067393F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockSmithDylib;
+			productName = LockSmith;
+			productReference = C479171E28DD01D80067393F /* LockSmithDylib */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4670A2C282EC49D0034FDB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C4670A33282EC49E0034FDB5 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C4670A2F282EC49D0034FDB5 /* Build configuration list for PBXProject "LockSmith" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4670A2B282EC49D0034FDB5;
+			productRefGroup = C4670A35282EC49E0034FDB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4670A33282EC49E0034FDB5 /* LockSmith */,
+				C479171428DD01D80067393F /* LockSmithDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4670A30282EC49E0034FDB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47916FF28D919750067393F /* utilities.m in Sources */,
+				C4670A38282EC49E0034FDB5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C479171528DD01D80067393F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C479171628DD01D80067393F /* utilities.m in Sources */,
+				C479171728DD01D80067393F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C479172128DD075E0067393F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C479171428DD01D80067393F /* LockSmithDylib */;
+			targetProxy = C479172028DD075E0067393F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C4670A39282EC49E0034FDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = LockSmith/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = LockSmith;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C4670A3A282EC49E0034FDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = LockSmith/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = LockSmith;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C4670A3C282EC49E0034FDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "DEBUG=1";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/LockSmith/Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "";
+				INFOPLIST_KEY_CFBundleDisplayName = LockSmith;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsafeature.LockSmith;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4670A3D282EC49E0034FDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/LockSmith/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LockSmith;
+				OTHER_CPLUSPLUSFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsafeature.LockSmith;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		C479171C28DD01D80067393F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"DEBUG=1",
+					"DYLIB=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/LockSmith/Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "";
+				INFOPLIST_KEY_CFBundleDisplayName = LockSmith;
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsafeature.LockSmith;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C479171D28DD01D80067393F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = "";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "DYLIB=1";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LockSmith copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LockSmith;
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsafeature.LockSmith;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4670A2F282EC49D0034FDB5 /* Build configuration list for PBXProject "LockSmith" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4670A39282EC49E0034FDB5 /* Debug */,
+				C4670A3A282EC49E0034FDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4670A3B282EC49E0034FDB5 /* Build configuration list for PBXNativeTarget "LockSmith" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4670A3C282EC49E0034FDB5 /* Debug */,
+				C4670A3D282EC49E0034FDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C479171B28DD01D80067393F /* Build configuration list for PBXNativeTarget "LockSmithDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C479171C28DD01D80067393F /* Debug */,
+				C479171D28DD01D80067393F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4670A2C282EC49D0034FDB5 /* Project object */;
+}
