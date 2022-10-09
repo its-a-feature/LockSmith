@@ -58,7 +58,14 @@ void printItem(NSDictionary *item, int index){
         printf("Description:   %s\n", [[item objectForKey:@"desc"] UTF8String]);
     }
     if( [item objectForKey:@"icmt"] ){
-        printf("Comment:      %s\n", [[item objectForKey:@"icmt"] UTF8String]);
+        if( [[item objectForKey:@"icmt"] isKindOfClass:[NSString class]] ){
+            printf("Comment:      %s\n", [[item objectForKey:@"icmt"] UTF8String]);
+        }
+        //NSData* data = (NSData*)[item objectForKey:@"icmt"];
+        //NSLog(@"Comment: %s\n", [[[item objectForKey:@"icmt"] base64EncodedStringWithOptions:0] UTF8String]);
+        
+        
+        
     }
     // internet password data
     if( [item objectForKey:@"port"] ){
@@ -360,10 +367,13 @@ void printACLs(NSDictionary *item, NSString* partitionID, bool force, bool valid
                         printf("\t\tAuthorizations: \n");
                         for(int j = 0; j < CFArrayGetCount(cfAuthorizations); j++){
                             NSString *authorization = CFArrayGetValueAtIndex(cfAuthorizations, j);
-                            printf("\t\t\t %s\n", [authorization UTF8String]);
-                            if( canDecryptEntry(authorization) ){
-                                perACLHasNecessaryAuthorizations = true;
+                            if(authorization){
+                                printf("\t\t\t %s\n", [authorization UTF8String]);
+                                if( canDecryptEntry(authorization) ){
+                                    perACLHasNecessaryAuthorizations = true;
+                                }
                             }
+                            
                         }
                     }
                     if(cfAuthorizations != nil){
